@@ -1,0 +1,6 @@
+table {border: solid #0758A8 3px}
+td {border: solid #000 1px}
+td.resultheader {font-weight: bold; background-color: #89B8E8;  text-align: center;}
+td.result { text-align: center;}
+.value {font-size: large}
+.unit {font-weight: bold}
