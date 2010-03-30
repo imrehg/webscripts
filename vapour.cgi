@@ -50,7 +50,11 @@ def main():
     print "<form action=\"\">"
     print "Select element: <select name=\"element\">"
     for k in data.keys():
-        print "<option value=\"%s\">%s</option>" %(k, k)
+	if form.has_key("element") and form["element"].value == k:
+		sel = 'selected'
+	else:
+		sel = ''
+        print "<option value=\"%s\" %s>%s</option>" %(k, sel, k)
     print "</select><br>"
     print "Temperature: <input type=\"text\" name=\"temperature\"> K<br>"
     print "<input type=\"Submit\" value=\"let's go\">"
