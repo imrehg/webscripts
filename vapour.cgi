@@ -40,7 +40,7 @@ def main():
     if form.has_key("element")  and (form["element"].value != ''):
         if form.has_key("temperature"):
             try:
-                T = int(form["temperature"].value)
+                T = float(form["temperature"].value)
                 if (T > 0):
                     calcp(form["element"].value, T)
             except:
